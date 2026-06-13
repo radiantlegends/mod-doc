@@ -24,7 +24,7 @@ Read a folder of text files and assemble them into a single document based on a 
     - Writes to the output file.
 
 ## Milestones
-1. Create a script that:
+1. ☑ Create a script that:
     - loads two hardcoded files
     - concatenates them
     - prints the result
