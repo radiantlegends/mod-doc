@@ -31,13 +31,14 @@ Read a folder of text files and assemble them into a single document based on a 
 2. ☑ Read the build_order.txt file:
     - load the build order file
     - parse the build order as a list
-3. Assemble an arbitrary number of modules.
+3. ☑ Assemble an arbitrary number of modules.
     - loop through each module
     - assemble them into one document
-4. Add CLI arguments:
+4. Output the assembled document to a file.
+5. Add CLI arguments:
     - input list
     - output file
-5. Clean up logic:
+6. Clean up logic:
     - parser
     - assembler
     - cli
