@@ -28,14 +28,16 @@ Read a folder of text files and assemble them into a single document based on a 
     - loads two hardcoded files
     - concatenates them
     - prints the result
-2. Read the build_order.txt file:
-    - Read the list of modules.
-    - Loop through each module.
-    - Assemble the modules.
-3. Add CLI arguments:
+2. ☑ Read the build_order.txt file:
+    - load the build order file
+    - parse the build order as a list
+3. Assemble an arbitrary number of modules.
+    - loop through each module
+    - assemble them into one document
+4. Add CLI arguments:
     - input list
     - output file
-4. Clean up logic:
+5. Clean up logic:
     - parser
     - assembler
     - cli

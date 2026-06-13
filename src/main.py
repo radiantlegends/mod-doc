@@ -28,10 +28,10 @@ def main():
     """
     Orchestrates the loading and assembly of documentation modules.
     """
-    a = load_file("modules/intro.md")
-    b = load_file("modules/receiving.md")
-    result = assemble_docs(a, b)
-    print(result)
+    build_order = load_file("build_order.txt")
+    parsed_list = build_order.split("\n")
+    print(parsed_list)
+
 
 if __name__ == "__main__":
     main()
