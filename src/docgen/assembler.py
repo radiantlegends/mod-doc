@@ -1,15 +1,4 @@
-def load_file(path: str) -> str:
-    """
-    Reads a text file and returns its contents as a string.
-
-    Args:
-        path (str): The filesystem path to the file.
-
-    Returns:
-        str: The full contents of the file.
-    """
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
+from .io_utils import load_file
 
 def assemble_docs(doc1: str, doc2: str) -> str:
     """
@@ -45,22 +34,3 @@ def build_document(build_order: list[str]) -> str:
         doc = load_file(file)
         final_doc = assemble_docs(final_doc, doc)
     return final_doc
-
-def write_file(path: str, document: str):
-    """
-    """
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(document)
-
-def main():
-    """
-    Orchestrates the loading and assembly of documentation modules.
-    """
-    build_order = load_file("build_order.txt")
-    parsed_list = build_order.split("\n")
-    result = build_document(parsed_list)
-    write_file("output.md", result)
-
-
-if __name__ == "__main__":
-    main()

@@ -1,7 +1,13 @@
 [project]
 name = "mod-doc"
 version = "0.1.0"
-description = "Add your description here"
+description = "A modular documentation builder."
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.12"
+
+[project.scripts]
+docgen = "docgen.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

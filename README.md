@@ -34,7 +34,7 @@ Read a folder of text files and assemble them into a single document based on a 
 3. ☑ Assemble an arbitrary number of modules.
     - loop through each module
     - assemble them into one document
-4. Output the assembled document to a file.
+4. ☑ Output the assembled document to a file.
 5. Add CLI arguments:
     - input list
     - output file
