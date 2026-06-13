@@ -46,6 +46,12 @@ def build_document(build_order: list[str]) -> str:
         final_doc = assemble_docs(final_doc, doc)
     return final_doc
 
+def write_file(path: str, document: str):
+    """
+    """
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(document)
+
 def main():
     """
     Orchestrates the loading and assembly of documentation modules.
@@ -53,7 +59,7 @@ def main():
     build_order = load_file("build_order.txt")
     parsed_list = build_order.split("\n")
     result = build_document(parsed_list)
-    print(result)
+    write_file("output.md", result)
 
 
 if __name__ == "__main__":
