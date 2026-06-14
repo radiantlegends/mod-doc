@@ -34,11 +34,18 @@ Read a folder of text files and assemble them into a single document based on a 
 3. ☑ Assemble an arbitrary number of modules.
     - loop through each module
     - assemble them into one document
-4. ☑ Output the assembled document to a file.
-5. Add CLI arguments:
+    - output the assembled document to a file
+4. ☑ Add CLI arguments:
     - input list
     - output file
-6. Clean up logic:
-    - parser
+5. ☑ Clean up logic:
+    - io_utils
     - assembler
-    - cli
+    - cli installable package
+6. ☐ Build a test suite and debug:
+    - set up test framework
+    - write tests for core docgen functions
+    - test edge cases for bugs
+7. ☐ Import site-gen project:
+    - port over core files from site-gen
+    - parse markdown to html
